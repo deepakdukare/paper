@@ -23,8 +23,8 @@ for(var i=0;i<images.length;i++){var elem=new Image();elem.src=prefix?prefix+ima
  * Requires jQuery v1.7.2 or later
  * Project repository: https://github.com/jquery-form/form
 
- * Copyright 2017 Kevin Morris
- * Copyright 2006 M. Alsup
+ * Copyright 2025-26 Kevin Morris
+ * Copyright 2025-26 M. Alsup
 
  * Dual licensed under the LGPL-2.1+ or MIT licenses
  * https://github.com/jquery-form/form#license
