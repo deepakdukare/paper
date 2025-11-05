@@ -15,8 +15,8 @@
   <link href="../img/logos/apple-touch-icon-57x57.png" rel="apple-touch-icon"/>
   <link href="../img/logos/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
   <link href="../img/logos/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
-  <!-- Font Awesome 6 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- Font Awesome 6.6.0 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
   <!-- plugins -->
@@ -35,6 +35,8 @@
     .contact-social-icons li { display: inline-block; margin-right: 1rem; }
     .contact-social-icons a { color: #fff; font-size: 1.25rem; transition: color 0.3s; }
     .contact-social-icons a:hover { color: #00d4ff; }
+
+    /* Scroll to Top Button */
     .scroll-top-percentage {
       position: fixed; bottom: 20px; right: 20px; background: #007bff; color: #fff;
       width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center;
@@ -42,13 +44,44 @@
       opacity: 0; visibility: hidden; transition: all 0.3s;
     }
     .scroll-top-percentage.show { opacity: 1; visibility: visible; }
+
+    /* Product Box Hover */
     .product-box { transition: transform 0.3s, box-shadow 0.3s; }
     .product-box:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+
+    /* Product Image Uniformity */
+    .product-img img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    /* Responsive Scroll Button */
+    @media (max-width: 576px) {
+      .scroll-top-percentage {
+        bottom: 70px;
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+      }
+    }
+
+    /* Footer Social Icons on Mobile */
+    @media (max-width: 480px) {
+      .social-icon-style3 li {
+        margin-bottom: 0.5rem;
+      }
+      .social-icon-style3 a {
+        font-size: 0.9rem;
+      }
+    }
   </style>
 </head>
 <body>
   <!-- PAGE LOADING -->
   <div id="preloader"></div>
+
   <!-- MAIN WRAPPER -->
   <div class="main-wrapper">
     <!-- HEADER -->
@@ -76,7 +109,7 @@
                 <nav class="navbar navbar-expand-lg navbar-light p-0">
                   <div class="navbar-header navbar-header-custom">
                     <a class="navbar-brand" href="../index.html">
-                      <img alt="Onedesk Packaging Solutions" id="logo" src="../img/logos/logo.svg"/ data-default="../img/logos/logo.svg">
+                      <img alt="Onedesk Packaging Solutions" id="logo" src="../img/logos/logo.svg" data-default="../img/logos/logo.svg">
                     </a>
                   </div>
                   <div aria-label="Toggle navigation" class="navbar-toggler bg-primary"></div>
@@ -119,9 +152,9 @@
                 <h1>Cushioning Solutions</h1>
               </div>
               <ul class="breadcrumb">
-  <li><a href="/paper-main/index.html">Home</a></li>
-  <li class="active">Cushioning Solutions</li>
-</ul>
+                <li><a href="../index.html">Home</a></li>
+                <li class="active">Cushioning Solutions</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -140,7 +173,7 @@
             <p class="mb-4 wow fadeInUp" data-wow-delay="350ms">Safeguard your products with our biodegradable paper cushions and honeycomb wraps. Ideal for electronics, glassware, and e-commerce – shock-absorbent, eco-friendly, and fully recyclable.</p>
             <div class="d-flex mb-1-9 wow fadeInUp" data-wow-delay="500ms">
               <div class="flex-shrink-0 me-4">
-                <img alt="Shock Absorbent" class="w-65px" src="../img/icons/icon-cushion1.png"/>
+                <img alt="Shock Absorbent Icon" class="w-65px" src="../img/icons/icon-cushion1.png"/>
               </div>
               <div class="flex-grow-1">
                 <h3 class="mb-2 h5">Superior Shock Absorption</h3>
@@ -149,7 +182,7 @@
             </div>
             <div class="d-flex mb-2-5 wow fadeInUp" data-wow-delay="650ms">
               <div class="flex-shrink-0 me-4">
-                <img alt="Lightweight" class="w-65px" src="../img/icons/icon-cushion2.png"/>
+                <img alt="Lightweight Icon" class="w-65px" src="../img/icons/icon-cushion2.png"/>
               </div>
               <div class="flex-grow-1">
                 <h3 class="mb-2 h5">Lightweight &amp; Cost-Effective</h3>
@@ -175,21 +208,21 @@
         <div class="row g-4 mt-n3">
           <div class="col-sm-6 col-lg-4 mt-3 wow fadeInUp" data-wow-delay="200ms">
             <div class="text-center p-4 bg-light rounded h-100">
-              <img alt="Impact-Resistant" class="mb-4 rounded-circle w-100px shadow-sm" src="../img/icons/benefit-shock.jpg"/>
+              <img alt="Impact-Resistant Layers Icon" class="mb-4 rounded-circle w-100px shadow-sm" src="../img/icons/benefit-shock.jpg"/>
               <h3 class="h6 mb-3">Impact-Resistant Layers</h3>
               <p class="mb-0 small text-muted">Multi-layer paper cushions for maximum protection.</p>
             </div>
           </div>
           <div class="col-sm-6 col-lg-4 mt-3 wow fadeInUp" data-wow-delay="350ms">
             <div class="text-center p-4 bg-light rounded h-100">
-              <img alt="Biodegradable" class="mb-4 rounded-circle w-100px shadow-sm" src="../img/icons/benefit-biodegrade.jpg"/>
+              <img alt="Fully Biodegradable Icon" class="mb-4 rounded-circle w-100px shadow-sm" src="../img/icons/benefit-biodegrade.jpg"/>
               <h3 class="h6 mb-3">Fully Biodegradable</h3>
               <p class="mb-0 small text-muted">Decomposes naturally, no microplastics.</p>
             </div>
           </div>
           <div class="col-sm-6 col-lg-4 mt-3 wow fadeInUp" data-wow-delay="500ms">
             <div class="text-center p-4 bg-light rounded h-100">
-              <img alt="Custom Fit" class="mb-4 rounded-circle w-100px shadow-sm" src="../img/icons/benefit-custom.jpg"/>
+              <img alt="Custom Fit Options Icon" class="mb-4 rounded-circle w-100px shadow-sm" src="../img/icons/benefit-custom.jpg"/>
               <h3 class="h6 mb-3">Custom Fit Options</h3>
               <p class="mb-0 small text-muted">Die-cut shapes for specific product dimensions.</p>
             </div>
@@ -209,7 +242,7 @@
           <div class="col-sm-6 col-lg-4 mt-3 wow fadeInUp" data-wow-delay="200ms">
             <div class="product-box card border-0 shadow-sm h-100 text-center overflow-hidden rounded">
               <div class="product-img">
-                <img alt="Honeycomb Paper" src="../img/products/honeycomb.jpg" class="img-fluid" style="height: 200px; object-fit: cover;">
+                <img alt="Honeycomb Cushion Wrap" src="../img/products/honeycomb.jpg" class="img-fluid">
               </div>
               <div class="p-4">
                 <h4 class="h6"><a href="../contact.html" class="text-dark text-decoration-none">Honeycomb Cushion Wrap</a></h4>
@@ -221,7 +254,7 @@
           <div class="col-sm-6 col-lg-4 mt-3 wow fadeInUp" data-wow-delay="350ms">
             <div class="product-box card border-0 shadow-sm h-100 text-center overflow-hidden rounded">
               <div class="product-img">
-                <img alt="Paper Cushion Pads" src="../img/products/paper-cushion.jpg" class="img-fluid" style="height: 200px; object-fit: cover;">
+                <img alt="Recycled Paper Cushion Pads" src="../img/products/paper-cushion.jpg" class="img-fluid">
               </div>
               <div class="p-4">
                 <h4 class="h6"><a href="../contact.html" class="text-dark text-decoration-none">Recycled Paper Cushion Pads</a></h4>
@@ -233,7 +266,7 @@
           <div class="col-sm-6 col-lg-4 mt-3 wow fadeInUp" data-wow-delay="500ms">
             <div class="product-box card border-0 shadow-sm h-100 text-center overflow-hidden rounded">
               <div class="product-img">
-                <img alt="Corrugated Inserts" src="../img/products/corrugated-cushion.jpg" class="img-fluid" style="height: 200px; object-fit: cover;">
+                <img alt="Corrugated Cushion Inserts" src="../img/products/corrugated-cushion.jpg" class="img-fluid">
               </div>
               <div class="p-4">
                 <h4 class="h6"><a href="../contact.html" class="text-dark text-decoration-none">Corrugated Cushion Inserts</a></h4>
@@ -254,9 +287,15 @@
       <div class="container">
         <div class="row justify-content-center text-center text-white">
           <div class="col-lg-8">
-            <h2 class="display-4 fw-bold mb-4 wow fadeInUp" data-wow-delay="200ms">Secure Your Fragiles Sustainably</h2>
-            <p class="lead mb-4 wow fadeInUp" data-wow-delay="350ms">Upgrade to paper-based cushioning and eliminate foam waste. Get tailored advice now!</p>
-            <a class="butn-style3 px-5 wow fadeInUp" data-wow-delay="500ms" href="../contact.html">Get Custom Quote</a>
+            <h2 class="display-4 fw-bold mb-4 wow fadeInUp text-white" data-wow-delay="200ms">
+              Secure Your Fragiles Sustainably
+            </h2>
+            <p class="lead mb-4 wow fadeInUp" data-wow-delay="350ms">
+              Upgrade to paper-based cushioning and eliminate foam waste. Get tailored advice now!
+            </p>
+            <a class="butn-style3 px-5 wow fadeInUp" data-wow-delay="500ms" href="../contact.html">
+              Get Custom Quote
+            </a>
           </div>
         </div>
       </div>
@@ -340,10 +379,12 @@
     document.getElementById('current-year').textContent = new Date().getFullYear();
   </script>
 
-  <!-- Preloader -->
+  <!-- Preloader with Fallback -->
   <script>
     $(window).on('load', function() {
-      $('#preloader').fadeOut(500);
+      setTimeout(function() {
+        $('#preloader').fadeOut(500);
+      }, 300);
     });
   </script>
 

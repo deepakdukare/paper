@@ -29,6 +29,11 @@
   <link href="css/scrollbar.css" rel="stylesheet"/>
   <!-- template core css -->
   <link href="css/styles.css" rel="stylesheet"/>
+  <!-- Include Animate.css for animations (add in <head> if not already) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!-- Include Font Awesome for leaf icon (optional) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
     body { font-family: 'Inter', sans-serif; }
     .bg-primary-opacity { background-color: rgba(0, 123, 255, 0.9); }
@@ -232,13 +237,21 @@
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="py-5 bg-img cover-background" data-background="img/bg/bg-cta.jpg" data-overlay-dark="8">
-      <div class="container text-center text-white">
-        <h2 class="display-4 fw-bold mb-4 wow fadeInUp" data-wow-delay="200ms">Ready for Sustainable Packaging?</h2>
-        <a href="contact.html" class="butn-style3 px-5 wow fadeInUp" data-wow-delay="400ms"><span>Get Custom Quote</span></a>
-      </div>
-    </section>
+<!-- CTA -->
+<section class="py-5 bg-img cover-background" data-background="../img/bg/bg-cta-solutions.jpg" data-overlay-dark="8">
+  <div class="container">
+    <h2 class="mb-4 fw-bold" style="color: #75e6da;">
+      Ready for Sustainable Packaging?
+    </h2>
+    <a href="contact.html" 
+       class="btn btn-lg px-4 py-2 rounded-pill text-white"
+       style="background-color: #4A70A9; transition: 0.3s;">
+      Get Custom Quote
+    </a>
+  </div>
+</section>
+
+
 
     <!-- FAQ ACCORDION -->
     <section class="py-5">
