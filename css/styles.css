@@ -1336,8 +1336,8 @@ a:hover,a:active {
     -ms-transform: scale(1)
 }
 
-.card-style01 .card-body {
-    overflow: hidden;
+.card-style01 .card-html { overflow-y: scroll; }
+body { overflow-x: hidden; overflow-y: auto;
     position: relative;
     background: linear-gradient(90deg, #0f313a 0%, #0f313a 100%) !important
 }
@@ -5214,3 +5214,46 @@ footer .phone a:hover,footer .phone a:active,footer .phone a:focus {
 
 /* Added: active subpage highlight */
 .active-subpage{ font-weight:700; text-decoration:underline; }
+
+#logo { display: block; height: 40px; width: auto; }
+
+
+/* === Footer Social & Contact fixes (2025-11-05) === */
+footer .social-icon-style3 { gap: 10px; }
+footer .social-icon-style3 li { margin-right: 0; }
+
+/* Make only the icon circular; keep text readable */
+footer .social-icon-style3 li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 4px 0;
+  border-radius: 0 !important;
+  line-height: 1.4;
+}
+
+footer .social-icon-style3 li a i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ffffff;
+  font-size: 14px;
+  color: #272c49;
+}
+
+/* Contact row icon sizing & alignment */
+footer .fa-solid {
+  font-size: 16px;
+  min-width: 16px;
+}
+
+/* Ensure footer links are properly underlined on hover and wrap nicely */
+footer a { text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+footer .list-unstyled li { word-break: break-word; }
